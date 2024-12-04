@@ -1,0 +1,315 @@
+body{
+  width: auto;
+  background-color: #4a3a1e;
+  font-family: sans-serif;
+}
+header{
+  height: 300%;
+  width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .homepageHeader{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    border: 0px;
+    border-bottom: 1px solid #fff;
+    background-color: #cc8716;
+     margin: 1px;
+    }
+
+    .cantorTitle{
+    font-size: 200%;
+    text-decoration: underline;
+    padding:1.5%;
+    margin: 5%;
+    width: 100%; 
+    color: #fff;
+    text-align: center;
+    align-content: center;
+    }
+  
+  .cantorLogo{
+    float: left;
+    width: 40%;
+    height: auto;
+  }
+
+  .navigationBar{
+    background-image: url(/images/background.jpg);
+    background-clip: padding-box;
+    background-size: cover;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center ;
+    height: auto;
+    width: 100%;
+    padding: 2%;
+  }
+
+  .sectionBar{
+    font-weight: bold;
+    color: #fff;
+    font-size: 100%;
+    gap: 10px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    padding: 0.5% 2%;
+    border: 2px solid #000000;   
+    width: auto;
+    background-color: #000e90;    
+  }
+
+  #selectedBar{
+    text-decoration: underline;
+    background-color: #6d6df2;
+  }
+
+  .arrow{
+    float: right;
+    padding: 2% 0px;
+    width: auto;
+    height: 80%;
+    
+  }
+  .hiddenArrow{
+    float: right;
+    padding: 2% 0px;
+    width: auto;
+    height: 0%;
+  }
+  .section{
+    padding: 1% 1% 5% 1%;
+    background: rgba(0, 0, 0, 0.1);
+    transition: 1s;
+  }
+  .hidden{
+    height: 0px;
+    padding: 0%;
+    border: 0px;
+    margin: 0%;
+    overflow: hidden;
+  }
+  .sectionTitle{
+    color: #fff;
+    background-color: #2e6656;
+    padding:5%;
+    border: 2px solid #000000 ;
+    margin:1%;
+    text-align: center;
+  }
+  .sectionInfo{
+    display: flex;
+    flex-direction: column;
+  }
+  .infoBox{
+    background-color: #e0d7c6;
+    padding:5%;
+    border: 2px solid #000000 ;
+    margin:1%;
+  }
+  .infoBox h3{
+    text-align: center;
+  }
+  .infoBox h2{
+    text-align: center;
+  }
+  .infoBox h4{
+    text-align: center;
+  }
+  #whereToFindUsBox{
+    text-align: center;
+  }
+  .decorativeImage{
+    width: 100%;
+    height: auto;
+    margin: 1%;
+    align-self: center;
+  }
+  .welcomeImage{
+    width: 100%;
+    height: auto;
+  }
+  .whereToFindUsBox{
+    padding:10%;
+    border: 2px solid #000000 ;
+    margin:1%;
+    
+  }
+  .ourAddressBox h{
+    font-size:100%;
+  }
+  footer{
+    margin: 0;
+    background-color: #3e3e3e;
+    display: flex;  
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    
+  }
+  .contactUs{
+    color: #fff;
+    width: 50%; 
+  }
+  .contactDetails{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .contactDetails a{
+    color: #fff;
+  }
+  .mediaLinks{
+    width: 100%;
+    height: auto;
+  }
+  .mediaLink{
+    width: 40px;
+    height: 40px;
+  }
+  .copyRightNotice{
+    
+    text-align: right;
+  }
+  
+  .romanNumerals{
+    list-style-type: lower-roman;
+  }
+  .numberedList{
+    list-style-type: decimal;
+  }
+  .coursesBox{
+    background-color: #ffaccb;
+    padding:5%;
+    border: 2px solid #000000 ;
+    margin:1%;
+    
+  }
+  .cell{
+    border: #000000 solid 1px;
+    background-color: #fff;
+    margin: 0px;
+    
+  }
+    .courseListBox h4{
+      padding: 5%;
+    }
+    .listSummary p{
+      padding: 1.5%;
+      padding-left: 5%;
+    }
+    .courseList{
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0px;
+      gap: 10px;
+    }
+    
+    .courseList li{
+      
+      list-style: none; 
+      
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .courseList li p{
+      background-color: #fff;
+      height: fit-content;
+      width: auto;
+      border: #000000 solid 1px;
+      padding: 1%;
+      margin: 0%;
+    }
+    #welcomeBox{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 20px;
+    }
+      .welcomeImage{
+        float: left;
+        width: 40%;
+        height: auto;
+      }
+  
+  #campusMapImage{
+    width: 100%;
+    height: auto;
+  }
+  .courseLists{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  #courseListBox{
+    padding: 2%;
+    font-size: 10px;
+  }
+
+  .table
+  th{
+background-color: #e0d7c6;
+color: #000;
+font-size: larger;
+  }
+  tr:nth-child(4n+1),
+  tr:nth-child(4n+2),
+  tr:nth-child(4n+3),
+  tr:nth-child(4n+4){
+ background-color: #cc8716;
+  }
+  tr:nth-child(8n+1),
+  tr:nth-child(8n+2),
+  tr:nth-child(8n+3),
+  tr:nth-child(8n+4){
+    background-color: #2e6656;
+    color: #fff;
+     }
+     
+  .contactDetails a{
+    &:link{
+      text-decoration: none;
+      color: #fff;
+    }
+    &:visited {
+      text-decoration: none;
+      color: #fff;
+    }
+    &:hover{
+      text-decoration: underline;
+      color: #fff;
+    }
+    &:active {
+      text-decoration: underline;
+      color: #0000ff;
+    }
+  
+  }
+  .copyrightNotice a{
+    &:link{
+    text-decoration: none;
+    color: #fff;
+  }
+  &:visited {
+    text-decoration: none;
+    color: #ff0000;
+  }
+  &:hover{
+    text-decoration: underline;
+    color: #fff;
+  }
+  &:active {
+    text-decoration: underline;
+    color: #11ff00;
+  }
+}

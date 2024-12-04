@@ -1,0 +1,109 @@
+@media (min-width: 720px) {
+header{
+    height: 10%;
+    width: auto;
+    background-color: #cc8716;
+    gap:1%;
+}
+.homepageHeader{
+    height: 100px;
+    width: 100%;
+}
+.cantorLogo{
+    float: left;
+    height: 100px;
+    width: auto;
+}
+.cantorTitle{
+    left: 0%;
+    width: 93.5%;
+    text-align: center;
+    padding-bottom: 0%;
+    margin-left: 0%;
+    margin-right: 112.11px;
+
+}
+.navigationBar{
+    background-image: none;
+    background-color: #cc8716;
+    background-clip: padding-box;
+    background-size: cover;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 5px;
+
+}
+.sectionBar{
+
+    gap: 10px;
+height: 30px;
+font-size: 110%;
+padding: 1%;
+text-size-adjust: auto;
+}
+.sectionTitle{
+    
+    padding:5%;
+    border: 2px solid #000000 ;
+    margin:1%;
+    text-align: center;
+}
+.sectionInfo{
+    display: flex;
+    flex-direction: row;
+}
+.infoBox{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 2.5%;
+}
+.courseListBox h4{
+    padding: 2.5%;
+}
+.listSummary p{
+    padding-left: 2.5%;
+}
+#facilitiesInfo{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+#facilitiesList{
+width: 30%;
+}
+#welcomeBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.welcomeImage{
+    float: left;
+    width: 40%;
+    height: fit-content;
+}
+#aboutUsTitle{
+    padding-left: 40%;
+    padding-right: 40%;
+}
+#welcomeText{
+    width: 50%;
+    font-size: 20px;
+    padding-left: 7.3%;
+}
+#cantorAtrium{
+    width: 50%;
+    height: auto;
+}
+ .courseLists{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+ }
+ #courseListBox{
+    font-size: 10px;
+    width: 40%;
+ }
+}
