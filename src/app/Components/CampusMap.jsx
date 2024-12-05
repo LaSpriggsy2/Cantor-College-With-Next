@@ -16,7 +16,7 @@ const CampusMap = () =>{
              the detail and quality of this image is actually important. Please don't lower my mark because of this. */}
                 <a href="" download="bigCampusMap.jpg">Click here to download image</a>
 
-                <a href="">Go to Google Maps</a>
+                <Link href="https://www.google.com/maps/@53.3725184,-1.4614528,14z?aut">Go to Google Maps</Link>
             </div>
         </div>
         </div>

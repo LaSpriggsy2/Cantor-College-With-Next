@@ -1,10 +1,13 @@
-"use client"
+"use server"
 import React from "react";
-import { useState, useEffect } from "react";
+import { fetchCourses } from "@/app/lib/db";
+//import { useState, useEffect } from "react";
 import CourseList from "./CourseList";
 
-const Courses = () =>{
-
+const Courses = async () =>{
+    const courseData= await fetchCourses().catch((error) => {
+        console.error("Error loading JSON:", error);
+      });
 // let [compCourseData, setCompCourseData] = useState(null);
 // let dataURL = "./computingCourseList.json";
 // let courseType = "computing";
@@ -58,7 +61,7 @@ cultural institutions, businesses and organisations.
                 </p>
             </div>
         </div>
-        <CourseList></CourseList>
+        <CourseList coursesList={courseData}></CourseList>
         </div>
     )
 }
