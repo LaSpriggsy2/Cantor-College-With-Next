@@ -91,14 +91,17 @@ const CourseList = async ({coursesList}) =>{
     function courseTable (courseType){
         useEffect(()=>{
       let elementId = "null";
-    if(courseType == "computing"){ elementId = "computingCoursesData";}
-    else if(courseType == "design"){ elementId = "designCoursesData";}
-    const courseTable = document.getElementById(elementId);
+      //let courseListType = "null";
+    // if(courseType == "computing"){ elementId = "computingCoursesData";}
+    // else if(courseType == "design"){ elementId = "designCoursesData";}
     fetch(coursesList)
-        .then(response => response.json())
-        .then(data => {
-          console.dir(data);
-          data.forEach((item) => {
+    //.then(response => response.json())
+    .then(data => {
+        console.dir(data);
+        data.forEach((item) => {
+            if(item.CourseSubject=='Computing'){elementId = "computingCoursesData";}
+            else if(item.CourseSubject=='Art and design'){elementId = "designCoursesData";}
+            const courseTable = document.getElementById(elementId);
             const row1 = document.createElement("tr");
             const courseName = document.createElement("td");
             
