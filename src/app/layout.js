@@ -29,7 +29,7 @@
 
 
 // import Image from "next/image";
-"use client"
+//"use client"
 import Image from 'next/image';
 import './styles/mobile.css'
 import './styles/desktop.css'
@@ -39,66 +39,69 @@ import LearningResources from "./Components/LearningResources";
 import ImportantInformation from "./Components/ImportantInformation";
 import WorkingWithBusinesses from "./Components/WorkingWithBusinesses";
 import Courses from "./Components/Courses";
-import { useEffect } from "react";
+//import { useEffect } from "react";
 import CampusMap from "./Components/CampusMap";
+import Header from './Components/Header';
+import Main from './Components/Main';
 const Home = () =>{
-  useEffect(()=>{
+//  useEffect(()=>{
 
-    let sectionBars = document.querySelectorAll(".sectionBar");
+    // let sectionBars = document.querySelectorAll(".sectionBar");
     
-    console.dir(sectionBars);
-    let hiddenSections = document.querySelectorAll(".hidden");
+    // console.dir(sectionBars);
+    // let hiddenSections = document.querySelectorAll(".hidden");
    
-    let bar = 0;
-    for(let i=0; i<sectionBars.length; i++){
-      sectionBars[i].addEventListener("click", RevealSection);
+    // let bar = 0;
+    // for(let i=0; i<sectionBars.length; i++){
+    //   sectionBars[i].addEventListener("click", RevealSection);
       
-    }
+    // }
     
-    function RevealSection(ev){
-      console.dir(ev.target.classList[0]);
-      let sectionName = ev.target.classList[0];
-      console.dir(sectionName);
-      let sectionElement = document.getElementById(sectionName);
-      console.dir(sectionElement);
-      if(sectionElement.classList.contains("hidden")){
-        let sections = document.querySelectorAll(".section");
-        console.dir(sections);
-        if(sections.length==1){
-          document.querySelector(".section").setAttribute("class","hidden");
-          document.getElementById("selectedBar").removeAttribute("id");
-        }
-        document.querySelector("."+sectionName).setAttribute("id","selectedBar");
-        sectionElement.setAttribute("class", "section");
-      }
-      else if(sectionElement.classList.contains("section")){
-        sectionElement.setAttribute("class", "hidden");
-        document.getElementById("selectedBar").removeAttribute("id");
+    // function RevealSection(ev){
+    //   console.dir(ev.target.classList[0]);
+    //   let sectionName = ev.target.classList[0];
+    //   console.dir(sectionName);
+    //   let sectionElement = document.getElementById(sectionName);
+    //   console.dir(sectionElement);
+    //   if(sectionElement.classList.contains("hidden")){
+    //     let sections = document.querySelectorAll(".section");
+    //     console.dir(sections);
+    //     if(sections.length==1){
+    //       document.querySelector(".section").setAttribute("class","hidden");
+    //       document.getElementById("selectedBar").removeAttribute("id");
+    //     }
+    //     document.querySelector("."+sectionName).setAttribute("id","selectedBar");
+    //     sectionElement.setAttribute("class", "section");
+    //   }
+    //   else if(sectionElement.classList.contains("section")){
+    //     sectionElement.setAttribute("class", "hidden");
+    //     document.getElementById("selectedBar").removeAttribute("id");
         
-      }
-    }
-    let aboutUsImageAr = [
-      './images/cantorPic1.jpg',
-      './images/cantorPic2.jpg'
+    //   }
+    // }
+//     let aboutUsImageAr = [
+//       './images/cantorPic1.jpg',
+//       './images/cantorPic2.jpg'
       
-    ];
-    let aboutUsImage = document.getElementById("cantorPics");
-let imageCounter1 = 0;
-// aboutUsImage.setAttribute("src", "/images/cantorPic1.jpg")
-function chgAboutUsImage(){
-    if(imageCounter1 == aboutUsImageAr.length){imageCounter1=0;}
-    aboutUsImage.setAttribute("src", aboutUsImageAr[imageCounter1]);
-    imageCounter1++
-    console.info(imageCounter1);
-}
-setInterval(chgAboutUsImage, 10000);
+//     ];
+//     let aboutUsImage = document.getElementById("cantorPics");
+// let imageCounter1 = 0;
+// // aboutUsImage.setAttribute("src", "/images/cantorPic1.jpg")
+// function chgAboutUsImage(){
+//     if(imageCounter1 == aboutUsImageAr.length){imageCounter1=0;}
+//     aboutUsImage.setAttribute("src", aboutUsImageAr[imageCounter1]);
+//     imageCounter1++
+//     console.info(imageCounter1);
+// }
+// setInterval(chgAboutUsImage, 10000);
 
-  });
+//  });
     return(
       <html>
   <body>
-    <header>
-    <div className="homepageHeader">
+    <Header></Header>
+   {/* <header>
+     <div className="homepageHeader">
         <Image src="/images/logo.jpg" width="112" height="100" alt="cantor college logo" className="cantorLogo"/>
         <h1 className="cantorTitle">Cantor Home</h1>
       </div>
@@ -122,8 +125,8 @@ setInterval(chgAboutUsImage, 10000);
                 Working with Businesses
             </div>
       </div>
-    </header>
-    <main>
+    </header> */}
+    {/* <main>
 <Courses></Courses>
 <Facilities></Facilities>
 <CampusMap></CampusMap>
@@ -147,7 +150,8 @@ Whatever your ambitions, our learning and support can help to get the most out o
 both as a student and in your future career.
 </p>
 </div>
-</main>
+</main> */}
+<Main></Main>
 <Footer></Footer>
 </body>
 </html>

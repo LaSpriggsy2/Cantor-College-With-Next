@@ -336,7 +336,7 @@ export default CourseList;
 //             const isFullTime = document.createElement("td");
 //             const courseDescription = document.createElement("td");
 //             const row4 = document.createElement("tr");
-    
+//    
 //             courseName.textContent = item.CourseTitle;
 //             ucasPoints.textContent = item.UcasPoints;
 //             ucasCode.textContent = item.UcasCode;
@@ -438,8 +438,8 @@ const CourseList = ({courseListData}) =>{
             const computing = courseListData.filter((item) => item.CourseSubject=== "Computing");
             const design = courseListData.filter((item) => item.CourseSubject=== "Art and design");
     
-            SetComputingCourses(computing);
-            SetDesignCourses(design);
-        });
-
-        const SetCourseList
+     //       SetComputingCourses(computing);
+    //        SetDesignCourses(design);
+  //      });
+//
+//        const SetCourseList

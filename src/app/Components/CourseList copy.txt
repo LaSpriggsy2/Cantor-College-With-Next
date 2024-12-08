@@ -53,13 +53,11 @@ const CourseList = async () =>{
             awardName.textContent = item.CourseAwardName;
             isUndergraduate.textContent = item.CourseType;
             isRecruiting.textContent = item.NoLongerRecruiting;
-            if(isRecruiting.textContent == "false") {isRecruiting.textContent = "Recruiting";}
-            else if(isRecruiting.textContent == "true") {isRecruiting.textContent = "Not Recruiting";}
+            isRecruiting.textContent === "false"?isRecruiting.textContent = "Recruiting": isRecruiting.textContent = "Not Recruiting";}
             entryYear.textContent = item.YearOfEntry;
             studyLength.textContent = item.StudyLength;
             hasFoundation.textContent = item.HasFoundationYear;
-            if(hasFoundation.textContent == "false") {hasFoundation.textContent = "No Foundation Year";}
-            else if(hasFoundation.textContent == "true") {hasFoundation.textContent = "Has Foundation Year";}
+            hasFoundation.textContent === "false") ?hasFoundation.textContent = "No Foundation Year" :hasFoundation.textContent = "Has Foundation Year";}
             isFullTime.textContent = item.ModeOfAttendance;
             courseDescription.textContent = item.CourseSummary;
             row1.appendChild(courseName);
