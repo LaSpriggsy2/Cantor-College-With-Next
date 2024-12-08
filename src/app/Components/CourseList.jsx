@@ -1,6 +1,5 @@
 "use client"
-import React from "react";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 const CourseList = ({courseListData}) =>{
         const [computingCourses, SetComputingCourses] = useState(null);
         const [designCourses, SetDesignCourses] = useState(null);
