@@ -65,7 +65,7 @@ cultural institutions, businesses and organisations.
                 </p>
             </div>
         </div>
-        <CourseList courseListData={courseData}></CourseList>
+        <CourseList courseListData={courseData}/>
         </div>
     )
 }
