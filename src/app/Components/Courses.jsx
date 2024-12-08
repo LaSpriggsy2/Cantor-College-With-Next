@@ -12,25 +12,7 @@ const Courses = async () =>{
     {/* .catch((error) => {
          console.error("Error loading JSON:", error);
        });*/}
-// let [compCourseData, setCompCourseData] = useState(null);
-// let dataURL = "./computingCourseList.json";
-// let courseType = "computing";
-// SetData(courseType);
-// let [dsgnCourseData, setDsgnCourseData] = useState(null);
-// dataURL = "./computingCourseList.json";
-// courseType = "design";
-// SetData(courseType);
-// function SetData () {
-// useEffect(()=>{
-//     fetch(dataURL)
-//     .then(response => response.json())
-//     .then(data => {
-//         if(courseType=="computing") {setCompCourseData(data);}
-//         else if(courseType=="design") {setDsgnCourseData(data);}
-//         console.dir(data);
-//     })
-// },[])
-// }
+
     return(
         <div className="hidden" id="courses">
             <h2 className="sectionTitle">Courses at Cantor College</h2>
