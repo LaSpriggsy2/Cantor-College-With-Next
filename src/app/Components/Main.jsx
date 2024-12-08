@@ -6,7 +6,7 @@ import CampusMap from "./CampusMap";
 import LearningResources from "./LearningResources";
 import ImportantInformation from "./ImportantInformation";
 import WorkingWithBusinesses from "./WorkingWithBusinesses";
-const Main = ()=>{
+const Welcome = ()=>{
   useEffect=(()=>{
 
     let aboutUsImageAr = [
@@ -26,7 +26,7 @@ const Main = ()=>{
     setInterval(chgAboutUsImage, 10000);
   });
     return(
-      <main>
+      <div>
         <Courses></Courses>
         <Facilities></Facilities>
         <CampusMap></CampusMap>
@@ -50,7 +50,7 @@ Whatever your ambitions, our learning and support can help to get the most out o
 both as a student and in your future career.
 </p>
 </div>
-</main>
+</div>
 )
 }
-export default Main;
+export default Welcome;

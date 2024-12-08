@@ -33,16 +33,16 @@
 import Image from 'next/image';
 import './styles/mobile.css'
 import './styles/desktop.css'
-import Facilities from "./Components/Facilities";
+//import Facilities from "./Components/Facilities";
 import Footer from "./Components/Footer";
-import LearningResources from "./Components/LearningResources";
-import ImportantInformation from "./Components/ImportantInformation";
-import WorkingWithBusinesses from "./Components/WorkingWithBusinesses";
-import Courses from "./Components/Courses";
-//import { useEffect } from "react";
-import CampusMap from "./Components/CampusMap";
+// import LearningResources from "./Components/LearningResources";
+// import ImportantInformation from "./Components/ImportantInformation";
+// import WorkingWithBusinesses from "./Components/WorkingWithBusinesses";
+// import Courses from "./Components/Courses";
+// //import { useEffect } from "react";
+// import CampusMap from "./Components/CampusMap";
 import Header from './Components/Header';
-import Main from './Components/Main';
+import Welcome from './Components/Main';
 const Home = () =>{
 //  useEffect(()=>{
 
@@ -126,14 +126,14 @@ const Home = () =>{
             </div>
       </div>
     </header> */}
-    {/* <main>
-<Courses></Courses>
+    <main>
+{/* <Courses></Courses>
 <Facilities></Facilities>
 <CampusMap></CampusMap>
 <LearningResources></LearningResources>
 <ImportantInformation></ImportantInformation>
-<WorkingWithBusinesses></WorkingWithBusinesses>
-<div className="infoBox" id="welcomeBox">
+<WorkingWithBusinesses></WorkingWithBusinesses> */}
+{/* <div className="infoBox" id="welcomeBox">
 <h2 id="aboutUsTitle"><b>About Us</b></h2>
   
   <img src="/images/cantorPic2.jpg" alt="image of cantor college" width="1000" height="750" 
@@ -149,9 +149,9 @@ Our students have gone on to successful careers in a wide range of industries ac
 Whatever your ambitions, our learning and support can help to get the most out of your time with Cantor College, 
 both as a student and in your future career.
 </p>
-</div>
-</main> */}
-<Main></Main>
+</div> */}
+<Welcome></Welcome>
+</main>
 <Footer></Footer>
 </body>
 </html>
