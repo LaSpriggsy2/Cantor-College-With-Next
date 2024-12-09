@@ -7,24 +7,37 @@ import React, { useEffect } from "react";
 // import ImportantInformation from "./ImportantInformation";
 // import WorkingWithBusinesses from "./WorkingWithBusinesses";
 const Welcome = ()=>{
-  useEffect=(()=>{
-
-    let aboutUsImageAr = [
-      './images/cantorPic1.jpg',
-      './images/cantorPic2.jpg'
-      
+  const images = [
+    {path: "images/cantorPic1.jpg", alt:"e"},
+    {path: "images/cantorPic2.jpg", alt:"e"},
     ];
-    let aboutUsImage = document.getElementById("cantorPics");
-    let imageCounter1 = 0;
-    // aboutUsImage.setAttribute("src", "/images/cantorPic1.jpg")
-    function chgAboutUsImage(){
-      if(imageCounter1 == aboutUsImageAr.length){imageCounter1=0;}
-      aboutUsImage.setAttribute("src", aboutUsImageAr[imageCounter1]);
-      imageCounter1++
-      console.info(imageCounter1);
-    }
-    setInterval(chgAboutUsImage, 10000);
-  });
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const nextSlide = () => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+  };
+  
+  useEffect=(()=>{
+    const interval = setInterval(() => {
+      nextSlide();
+  }, 5000);
+  return () => clearInterval(interval);
+}, [nextSlide]);
+    // let aboutUsImageAr = [
+    //   './images/cantorPic1.jpg',
+    //   './images/cantorPic2.jpg'
+      
+    // ];
+    // let a = getElementById("cantorPics");
+    // let imageCounter1 = 0;
+    // // aboutUsImage.setAttribute("src", "/images/cantorPic1.jpg")
+    // function chgAboutUsImage(){
+    //   if(imageCounter1 == aboutUsImageAr.length){imageCounter1=0;}
+    //   aboutUsImage.setAttribute("src", aboutUsImageAr[imageCounter1]);
+    //   imageCounter1++
+    //   console.info(imageCounter1);
+    // }
+    // setInterval(chgAboutUsImage, 10000);
+  
     return(
       <div>
         {/* <Courses></Courses>
@@ -35,9 +48,10 @@ const Welcome = ()=>{
         <WorkingWithBusinesses></WorkingWithBusinesses> */}
 <div className="infoBox" id="welcomeBox">
 <h2 id="aboutUsTitle"><b>About Us</b></h2>
-  
-  <img src="/images/cantorPic2.jpg" alt="image of cantor college" width="1000" height="750" 
+{images.map((image, index) => (
+  <img key={index} src={image.path} alt={image.alt} width="1000" height="750" 
 className="welcomeImage" id="cantorPics" />
+))}
 
 <p id="welcomeText">
 Cantor College was established in 1989 to specialize in Computing and Design.   
