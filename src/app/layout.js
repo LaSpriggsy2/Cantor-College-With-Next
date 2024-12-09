@@ -33,16 +33,16 @@
 import Image from 'next/image';
 import './styles/mobile.css'
 import './styles/desktop.css'
-//import Facilities from "./Components/Facilities";
+import Facilities from "./Components/Facilities";
 import Footer from "./Components/Footer";
-// import LearningResources from "./Components/LearningResources";
-// import ImportantInformation from "./Components/ImportantInformation";
-// import WorkingWithBusinesses from "./Components/WorkingWithBusinesses";
-// import Courses from "./Components/Courses";
+import LearningResources from "./Components/LearningResources";
+import ImportantInformation from "./Components/ImportantInformation";
+import WorkingWithBusinesses from "./Components/WorkingWithBusinesses";
+import Courses from "./Components/Courses";
 // //import { useEffect } from "react";
-// import CampusMap from "./Components/CampusMap";
+import CampusMap from "./Components/CampusMap";
 import Header from './Components/Header';
-import Welcome from './Components/Main';
+import Welcome from './Components/Welcome';
 const Home = () =>{
 //  useEffect(()=>{
 
@@ -127,12 +127,12 @@ const Home = () =>{
       </div>
     </header> */}
     <main>
-{/* <Courses></Courses>
+<Courses></Courses>
 <Facilities></Facilities>
 <CampusMap></CampusMap>
 <LearningResources></LearningResources>
 <ImportantInformation></ImportantInformation>
-<WorkingWithBusinesses></WorkingWithBusinesses> */}
+<WorkingWithBusinesses></WorkingWithBusinesses> 
 {/* <div className="infoBox" id="welcomeBox">
 <h2 id="aboutUsTitle"><b>About Us</b></h2>
   

@@ -1,11 +1,11 @@
 "use client"
 import React, { useEffect } from "react";
-import Courses from "./Courses";
-import Facilities from "./Facilities";
-import CampusMap from "./CampusMap";
-import LearningResources from "./LearningResources";
-import ImportantInformation from "./ImportantInformation";
-import WorkingWithBusinesses from "./WorkingWithBusinesses";
+// import Courses from "./Courses";
+// import Facilities from "./Facilities";
+// import CampusMap from "./CampusMap";
+// import LearningResources from "./LearningResources";
+// import ImportantInformation from "./ImportantInformation";
+// import WorkingWithBusinesses from "./WorkingWithBusinesses";
 const Welcome = ()=>{
   useEffect=(()=>{
 
@@ -27,12 +27,12 @@ const Welcome = ()=>{
   });
     return(
       <div>
-        <Courses></Courses>
+        {/* <Courses></Courses>
         <Facilities></Facilities>
         <CampusMap></CampusMap>
         <LearningResources></LearningResources>
         <ImportantInformation></ImportantInformation>
-        <WorkingWithBusinesses></WorkingWithBusinesses>
+        <WorkingWithBusinesses></WorkingWithBusinesses> */}
 <div className="infoBox" id="welcomeBox">
 <h2 id="aboutUsTitle"><b>About Us</b></h2>
   
