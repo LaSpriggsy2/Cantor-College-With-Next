@@ -1,5 +1,6 @@
 "use client"
 import React, { useEffect, useState } from "react";
+import Image from "next/image";
 const Welcome = ()=>{
   const images = [
     {path: "images/cantorPic1.jpg", alt:"Image of Cantor College"},
@@ -36,7 +37,7 @@ const Welcome = ()=>{
       <div>
 <div className="infoBox" id="welcomeBox">
 <h2 id="aboutUsTitle"><b>About Us</b></h2>
-<div style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+<div className="slides" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
 {images.map((image, index) => (
   <img key={index} src={image.path} alt={image.alt} width="1000" height="750" 
   className="welcomeImage" id="cantorPics" />
@@ -55,6 +56,6 @@ both as a student and in your future career.
 </p>
 </div>
 </div>
-)
-}
+);
+};
 export default Welcome;

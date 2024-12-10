@@ -13,8 +13,8 @@ const CourseList = ({courseListData}) =>{
 
         const SetCourseList = (item) =>(
             
-                        <React.Fragment key={item.CourseID}>
-                
+                        <tbody key={item.CourseID}>
+                {/* <div> */}
                     <tr >
                         <td>
                             {item.CourseTitle}
@@ -56,8 +56,8 @@ const CourseList = ({courseListData}) =>{
                             {item.CourseSummary}
                         </td>
                     </tr>
-                
-                 </React.Fragment>
+                {/* </div> */}
+                 </tbody>
             );
     return(
         <div className="courseLists">
@@ -68,9 +68,9 @@ const CourseList = ({courseListData}) =>{
                             <th>Computing Courses</th>
                         </tr>
                     </thead>
-                    <tbody id="computingCoursesData">
+                    {/* <tbody id="computingCoursesData"> */}
                         {computingCourses.map((item)=> SetCourseList(item))}
-                    </tbody>
+                    {/* </tbody> */}
                 </table>
             </div>
             <div className="infoBox" id="courseListBox">
@@ -80,9 +80,9 @@ const CourseList = ({courseListData}) =>{
                             <th>Design Courses</th>
                         </tr>
                     </thead>
-                    <tbody id="designCoursesData">
+                    {/* <tbody id="designCoursesData"> */}
                     {designCourses.map((item)=> SetCourseList(item))}
-                    </tbody>
+                    {/* </tbody> */}
                 </table>
             </div>
         
