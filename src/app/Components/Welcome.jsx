@@ -1,22 +1,16 @@
 "use client"
-import React, { useEffect } from "react";
-// import Courses from "./Courses";
-// import Facilities from "./Facilities";
-// import CampusMap from "./CampusMap";
-// import LearningResources from "./LearningResources";
-// import ImportantInformation from "./ImportantInformation";
-// import WorkingWithBusinesses from "./WorkingWithBusinesses";
+import React, { useEffect, useState } from "react";
 const Welcome = ()=>{
   const images = [
-    {path: "images/cantorPic1.jpg", alt:"e"},
-    {path: "images/cantorPic2.jpg", alt:"e"},
+    {path: "images/cantorPic1.jpg", alt:"Image of Cantor College"},
+    {path: "images/cantorPic2.jpg", alt:"Image of Cantor College"},
     ];
     const [currentIndex, setCurrentIndex] = useState(0);
     const nextSlide = () => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
   
-  useEffect=(()=>{
+  useEffect(()=>{
     const interval = setInterval(() => {
       nextSlide();
   }, 5000);
@@ -40,18 +34,14 @@ const Welcome = ()=>{
   
     return(
       <div>
-        {/* <Courses></Courses>
-        <Facilities></Facilities>
-        <CampusMap></CampusMap>
-        <LearningResources></LearningResources>
-        <ImportantInformation></ImportantInformation>
-        <WorkingWithBusinesses></WorkingWithBusinesses> */}
 <div className="infoBox" id="welcomeBox">
 <h2 id="aboutUsTitle"><b>About Us</b></h2>
+<div style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
 {images.map((image, index) => (
   <img key={index} src={image.path} alt={image.alt} width="1000" height="750" 
-className="welcomeImage" id="cantorPics" />
+  className="welcomeImage" id="cantorPics" />
 ))}
+</div>
 
 <p id="welcomeText">
 Cantor College was established in 1989 to specialize in Computing and Design.   
