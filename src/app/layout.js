@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import './styles/mobile.css'
 import './styles/desktop.css'
 import Facilities from "./Components/Facilities";

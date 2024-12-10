@@ -1,25 +1,54 @@
 "use client"
 import React from "react";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 const Facilities = () =>{
-useEffect(()=>{
-    let facilitiesImageAr = [
-        './images/cantorAtriumInside2.jpg',
-        './images/cantorAtriumInside3.jpg',
-        './images/cantorAtriumInside1.jpg'
+// useEffect(()=>{
+//     let facilitiesImageAr = [
+//         './images/cantorAtriumInside2.jpg',
+//         './images/cantorAtriumInside3.jpg',
+//         './images/cantorAtriumInside1.jpg'
         
-      ];
-      let facilitiesImage = document.getElementById("cantorAtrium");
-let imageCounter2 = 0;
-facilitiesImage.setAttribute("src", "images/cantorAtriumInside1.jpg")
-function chgFacilitiesImage(){
-    if(imageCounter2 == facilitiesImageAr.length){imageCounter2=0;}
-    facilitiesImage.setAttribute("src", facilitiesImageAr[imageCounter2]);
-    imageCounter2++
-    console.info(imageCounter2);
-}
-setInterval(chgFacilitiesImage, 5000);
-})
+//       ];
+//       let facilitiesImage = document.getElementById("cantorAtrium");
+// let imageCounter = 0;
+// facilitiesImage.setAttribute("src", "images/cantorAtriumInside1.jpg")
+// function chgFacilitiesImage(){
+//     if(imageCounter == facilitiesImageAr.length){imageCounter=0;}
+//     facilitiesImage.setAttribute("src", facilitiesImageAr[imageCounter]);
+//     imageCounter++
+//     console.info(imageCounter);
+// }
+// setInterval(chgFacilitiesImage, 5000);
+// })
+let facilitiesImageAr = [
+            'images/cantorAtriumInside2.jpg',
+            'images/cantorAtriumInside3.jpg',
+            'images/cantorAtriumInside1.jpg'
+            
+          ];
+const images = [
+    { path: "images/cantorAtriumInside1.jpg", alt: "Cantor college atrium" },
+    // { path: "images/cantorAtriumInside2.jpg", alt: "Cantor college atrium" },
+    // { path: "images/cantorAtriumInside3.jpg", alt: "Cantor college atrium" },
+    
+];
+const [currentIndex, setCurrentIndex] = useState(0);
+let imageNumber =0;
+const nextImage = () => {
+    if(imageNumber==facilitiesImageAr.length){imageNumber=0;}
+    console.info(imageNumber);
+    // setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    images[0].path=facilitiesImageAr[imageNumber];
+    imageNumber++
+};
+
+useEffect(() => {
+    const interval = setInterval(() => {
+        nextImage();
+    }, 5000);
+    return () => clearInterval(interval);
+}, [nextImage]);
+
     return(
         <div className="hidden" id="facilities">
             <h2 className="sectionTitle">Facilities at Cantor College</h2>
@@ -40,7 +69,10 @@ setInterval(chgFacilitiesImage, 5000);
                 </p>
 
             </div>
-            <img src="/images/cantorAtriumInside1.jpg" width="1080" height="720" alt="Cantor college atrium" className="decorativeImage" id="cantorAtrium"/>
+            {images.map((image, index) => (
+                    <img key={index} src={image.path} alt={image.alt} className="decorativeImage" id="cantorAtrium"/>
+                ))}
+            {/* <img src="/images/cantorAtriumInside1.jpg" width="1080" height="720" alt="Cantor college atrium" className="decorativeImage" id="cantorAtrium"/> */}
             <div className="infoBox" id="facilitiesList">
                 <h3>Facilities include:</h3>
                 <ul className="bulletPoints">
