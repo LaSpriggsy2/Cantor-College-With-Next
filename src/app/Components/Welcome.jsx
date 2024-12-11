@@ -5,10 +5,16 @@ const Welcome = ()=>{
   const images = [
     {path: "images/cantorPic1.jpg", alt:"Image of Cantor College"},
     {path: "images/cantorPic2.jpg", alt:"Image of Cantor College"},
+    // {path: "images/banner-image-1.jpg", alt:"test image"},
+    // {path: "images/banner-image-2.jpg", alt:"test image"},
+    // {path: "images/banner-image-1.jpg", alt:"test image"},
+
+
     ];
     const [currentIndex, setCurrentIndex] = useState(0);
     const nextSlide = () => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+      
   };
   
   useEffect(()=>{
@@ -37,13 +43,18 @@ const Welcome = ()=>{
       <div>
 <div className="infoBox" id="welcomeBox">
 <h2 id="aboutUsTitle"><b>About Us</b></h2>
+
+<div className="imageSliderContainer">
+<div className="imageSlider"> 
 <div className="slides" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
 {images.map((image, index) => (
   <img key={index} src={image.path} alt={image.alt} width="1000" height="750" 
-  className="welcomeImage" id="cantorPics" />
+  // className="welcomeImage"
+   className="slide" id="cantorPics" />
 ))}
 </div>
-
+</div>
+</div>
 <p id="welcomeText">
 Cantor College was established in 1989 to specialize in Computing and Design.   
 At Cantor College, we want to give students the education they need to achieve their career aims, 

@@ -240,12 +240,40 @@ header{
         width: 40%;
         height: auto;
       }
-      .slides {
-        display: flex;
+      /* .slides {
+        /* display: flex; 
         transition: transform 0.5s ease;
-        overflow: hidden;
-        position: relative;
+        /* overflow: hidden;
+        position: relative; 
+    } */
+    .imageSliderContainer{
+      display:flex;
+      justify-content: center;
+      width: 40%;
+      height: auto;
     }
+    /* .imageSlider {
+      position: relative;
+      overflow: hidden;
+      /* width: 40%; 
+      /* float: left;
+        width: 40%;
+        height: auto; 
+  } */
+  .imageSlider {
+    position: relative;
+    overflow: hidden;
+    /* width: 40%; */
+    /* height: auto; */
+}
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+  .slide {
+    min-width: 100%;
+    height: auto;
+}
   #campusMapImage{
     width: 100%;
     height: auto;
