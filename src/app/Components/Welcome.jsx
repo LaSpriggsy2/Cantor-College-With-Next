@@ -1,6 +1,5 @@
 "use client"
 import React, { useEffect, useState } from "react";
-import Image from "next/image";
 const Welcome = ()=>{
   const images = [
     {path: "images/cantorPic1.jpg", alt:"Image of Cantor College"},
@@ -23,22 +22,6 @@ const Welcome = ()=>{
   }, 5000);
   return () => clearInterval(interval);
 }, [nextSlide]);
-    // let aboutUsImageAr = [
-    //   './images/cantorPic1.jpg',
-    //   './images/cantorPic2.jpg'
-      
-    // ];
-    // let a = getElementById("cantorPics");
-    // let imageCounter1 = 0;
-    // // aboutUsImage.setAttribute("src", "/images/cantorPic1.jpg")
-    // function chgAboutUsImage(){
-    //   if(imageCounter1 == aboutUsImageAr.length){imageCounter1=0;}
-    //   aboutUsImage.setAttribute("src", aboutUsImageAr[imageCounter1]);
-    //   imageCounter1++
-    //   console.info(imageCounter1);
-    // }
-    // setInterval(chgAboutUsImage, 10000);
-  
     return(
       <div>
 <div className="infoBox" id="welcomeBox">

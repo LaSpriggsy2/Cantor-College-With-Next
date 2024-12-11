@@ -33,7 +33,7 @@ in the case of students, or in the case of staff through the appropriate College
             <div className="infoBox" id="learningResourcesRules">
                 <h3>Rules</h3>
                 <div> 
-                   <h4><b>A.      Access:</b></h4>
+                   <h4>A.      Access:</h4>
                     <ul className="romanNumerals">
                     <li>	The use of Library and Resource Centre facilities is normally limited to use for the educational and other purposes of the College.
                     </li>
@@ -47,7 +47,7 @@ in the case of students, or in the case of staff through the appropriate College
                 <p><em>Users of the Library and Resource Centre are reminded that they must be willing to show  ID cards or other identification when requested to do so by College staff.</em></p>
                 </div>
                 <div>
-                    <h4><b>B.      Use of Facilities:</b></h4>
+                    <h4>B.      Use of Facilities:</h4>
                     <ul className="romanNumerals">
 <li>	The Library and Resource Centre is not responsible for loss of, or damage to, the personal belongings of its users and visitors.  Users must take reasonable precautions against theft of their belongings, and must not leave belongings unattended even for a very short period. Study tables/PCs may not be reserved by depositing clothing or private property on the adjacent seat.  Articles left unattended may be removed by staff but will be returned on request at the Reception Desk.
 </li>

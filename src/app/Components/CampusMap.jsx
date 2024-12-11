@@ -7,7 +7,7 @@ const CampusMap = () =>{
             <div className="hidden" id="campusMap">
             <h2 className="sectionTitle">Campus Map and Where to Find Us</h2>
             <div className="infoBox" id="whereToFindUsBox">
-                <h><b>Where to Find Us</b></h>
+                <h3>Where to Find Us</h3>
                 <p>Cantor College<br/>Main Street<br/>Sheffield<br/>SC4 2BB</p>
             </div>
             <div className="infoBox">

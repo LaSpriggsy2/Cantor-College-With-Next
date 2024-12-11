@@ -5,7 +5,7 @@ const WorkingWithBusinesses = () =>{
         <h2 className="sectionTitle">Working with Businesses</h2>
             <div className="infoBox">
                 <div>
-                    <h><b>Partner with Cantor College: Unlock Expertise, Innovation, and Growth</b></h>
+                    <h3>Partner with Cantor College: Unlock Expertise, Innovation, and Growth</h3>
                     <p>
                     At Cantor College, we believe in the power of collaboration between education and industry. 
                     Our College offers a range of specialized services designed to support businesses in achieving their goals 
@@ -15,7 +15,7 @@ const WorkingWithBusinesses = () =>{
                     </p>
                 </div>
                 <div>
-            <h><b>Our Services</b></h>
+            <h3>Our Services</h3>
             <ul className="numberedList">
                     <li> Custom Training and Development Programs Empower your workforce with skills that matter. Our faculty can develop custom training programs that address your business's specific needs, whether in advanced computing technologies, creative design, or the latest in tech innovation. We offer flexible learning options, including on-site workshops, online modules, and blended learning experiences.
 </li>
@@ -31,7 +31,7 @@ const WorkingWithBusinesses = () =>{
                 </div>
                 <div>
 
-<h><b>Why Partner with Cantor College?</b></h>
+<h3>Why Partner with Cantor College?</h3>
 <ul className="bulletPoints">
 <li>Cutting-Edge Expertise: Our programs are at the forefront of industry trends, 
     ensuring that our services reflect the latest advancements in technology and design.</li>
@@ -44,7 +44,7 @@ making us the ideal partner for businesses seeking innovative solutions.</li>
 </ul>
                 </div>
                 <div>
-                    <h><b>Get in Touch</b></h>
+                    <h3>Get in Touch</h3>
             <p>Ready to explore how Cantor College can help your business grow? 
                 Contact our Business Services team today to discuss your needs 
                 and learn more about our offerings. 

@@ -5,8 +5,8 @@ const ImportantInformation = () =>{
             <h2 className="sectionTitle">Important Information</h2>
             <div className="sectionInfo">
         <div className="infoBox">
-            <h3><b>Information for students</b></h3>
-            <h4><b>Explore Cantor College: World-Class Facilities for Your Success</b></h4>
+            <h3>Information for students</h3>
+            <h4>Explore Cantor College: World-Class Facilities for Your Success</h4>
 <p>At Cantor College, we are committed to providing our students with the best possible environment to learn, create, and innovate. Our state-of-the-art facilities are designed to support your academic journey and help you thrive in your chosen field. Whether you’re studying computing, design, or technology, our campus offers everything you need to excel.
 </p>
 <b>Our Facilities</b>
@@ -38,21 +38,21 @@ Cantor College’s facilities are designed to enhance your learning experience a
 
         </div>
         <div className="infoBox">
-            <h3><b>Information for Staff</b></h3> 
+            <h3>Information for Staff</h3> 
 <p>
-<b>News</b> 
+<b>News </b> 
 Cantor College recently hosted the Software Engineering student of the year awards.  Shortlisted candidates from around the country attended the one day event. 
  <br/><br/>
-<b>Academic Registry</b> 
+<b>Academic Registry </b> 
 For academic regulations, assessment, awards, student records and course validation. 
 <br/><br/>
-<b>Catering Services</b> 
+<b>Catering Services </b> 
 Contact the Catering Services regarding on and off-site catering. 
 <br/><br/>
-<b>Financial Services</b> 
+<b>Financial Services </b> 
 The financial team based on the 2nd Floor are responsible for all areas of student finance as well as College budgeting. 
 <br/><br/>
-<b>Information Systems Services</b> 
+<b>Information Systems Services </b> 
 The ISS team delivers the College’s computing facilities including all hardware and software.  They also run the staff helpdesk. 
 <br/><br/>
 <b>Marketing Services</b> 
@@ -61,7 +61,7 @@ The Marketing Team will help promote events and new courses.  They will help wit
 <b>Personnel Services</b> 
 All staff pay and conditions enquiries should be directed to the Personnel Services team on the 3rd floor. 
 <br/><br/>
-<b>Facilities</b> 
+<b>Facilities </b> 
 The facilities are responsible for the general care and maintenance of the College.  All enquiries via the main helpdesk. 
 </p>
         </div>
