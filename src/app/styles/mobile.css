@@ -390,6 +390,20 @@ font-size: larger;
   margin-left:5px;
 }
 
-.singleCourseTable{
+.singleCourseTable
 
+td{
+  background-color: #fff;
+  color:#000;
 }
+.courseDetailsItem{
+  background-color: #fff;
+  display: flex;
+  padding:15px;
+}
+.courseDetailsItems{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+

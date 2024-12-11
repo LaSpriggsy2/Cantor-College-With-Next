@@ -19,26 +19,27 @@ const CourseDetails = async ({ params }) => {
       <h2>
        {course.CourseTitle} 
       </h2>
-      <div>Entry Year: {course.YearOfEntry}<br></br>Study Length: {course.StudyLength} <br></br>{course.ModeOfAttendance}</div>
-      <div>Ucas Code: {course.UcasCode==="None"?"N/A":course.UcasCode} <br></br>Ucas Points: {course.UcasPoints}</div>
       <table className="singleCourseTable">
         <tbody>
           <tr>
             <td>{course.CourseAwardName}</td>
-            <td></td>
             <td>{course.CourseSubject}</td>
+            <td></td>
           </tr>
           <tr>
             <td>{course.CourseSummary}</td>
-            <td>{course.CourseType}</td>
-            <td></td>
           </tr>
           <tr>
+            <td>{course.CourseType}</td>
             <td>{course.HasFoundationYear==="true"?"Has Foundation Year":"No Foundation Year"}</td>
             <td>{course.NoLongerRecruiting==="false"?"Recruiting":"Not Recruiting"}</td>
           </tr>
         </tbody>
       </table>
+      <div className="courseDetailsItems">
+      <div className="courseDetailsItem">Entry Year: {course.YearOfEntry}<br></br>Study Length: {course.StudyLength} <br></br>{course.ModeOfAttendance}</div>
+      <div className="courseDetailsItem">Ucas Code: {course.UcasCode==="None"?"N/A":course.UcasCode} <br></br>Ucas Points: {course.UcasPoints}</div>
+      </div>
       <p>
         <Link href='/'>Back to Course Lists</Link>
       </p>
