@@ -7,14 +7,19 @@ import ImportantInformation from "./Components/ImportantInformation";
 import WorkingWithBusinesses from "./Components/WorkingWithBusinesses";
 import Courses from "./Components/Courses";
 import CampusMap from "./Components/CampusMap";
-import Header from './Components/Header';
 import Welcome from './Components/Welcome';
+import Image from 'next/image';
+import NavBar from './Components/NavBar';
+import Header from './Components/Header';
 const Home = () =>{
 
     return(
       <html>
   <body>
+    <header>
 <Header></Header>
+<NavBar></NavBar>
+    </header>
     <main>
 <Courses></Courses>
 <Facilities></Facilities>

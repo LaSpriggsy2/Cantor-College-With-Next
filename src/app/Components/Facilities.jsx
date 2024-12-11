@@ -27,22 +27,17 @@ let facilitiesImageAr = [
             
           ];
 const images = [
-    { path: "images/cantorAtriumInside1.jpg", alt: "Cantor college atrium" },
-    { path: "images/cantorAtriumInside2.jpg", alt: "Cantor college atrium" },
-    { path: "images/cantorAtriumInside3.jpg", alt: "Cantor college atrium" },
+    { path: "images/cantorAtriumInside1.jpg" },
+    { path: "images/cantorAtriumInside2.jpg" },
+    { path: "images/cantorAtriumInside3.jpg" },
     
 ];
-// const [currentIndex, setCurrentIndex] = useState(0);
-let imageNumber =0;
-const currentImage = images[imageNumber].path;
+const [currentIndex, setCurrentIndex] = useState(0);
+// const currentImage = images[imageNumber].path;
 const nextImage = () => {
-    imageNumber++
-    if(imageNumber==facilitiesImageAr.length){imageNumber=0;}
-    console.info(imageNumber);
-    // setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    // let imageSource = facilitiesImageAr[imageNumber]
-    // =imageSource;
-    // currentImage=images[imageNumber].path;
+    console.info(currentIndex);
+    setCurrentIndex((imageNumber) => (imageNumber + 1) % images.length);
+
 };
 
 useEffect(() => {
@@ -72,13 +67,7 @@ useEffect(() => {
                 </p>
 
             </div>
-            {/* {images.map((image, index) => (
-                    <img key={index} src={image.path} alt={image.alt} className="decorativeImage" id="cantorAtrium"/>
-                ))} */}
-                
-                    <img src={currentImage} width="1080" height="720" alt="Cantor college atrium" className="decorativeImage" id="cantorAtrium"/>
-                
-            {/* <img src="/images/cantorAtriumInside1.jpg" width="1080" height="720" alt="Cantor college atrium" className="decorativeImage" id="cantorAtrium"/> */}
+                    <img src={images[currentIndex].path} width="1080" height="720" alt="Cantor college atrium" className="decorativeImage" id="cantorAtrium"/>
             <div className="infoBox" id="facilitiesList">
                 <h3>Facilities include:</h3>
                 <ul className="bulletPoints">

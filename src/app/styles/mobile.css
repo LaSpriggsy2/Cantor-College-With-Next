@@ -385,3 +385,8 @@ font-size: larger;
     color: #11ff00;
   }
 }
+.mediaLinks{
+  display: flex;
+  gap:5px;
+  margin-left:5px;
+}
