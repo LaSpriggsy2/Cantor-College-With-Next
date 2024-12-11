@@ -11,7 +11,7 @@ const CampusMap = () =>{
                 <p>Cantor College<br/>Main Street<br/>Sheffield<br/>SC4 2BB</p>
             </div>
             <div className="infoBox">
-                Cantor College Campus Map
+                <h3>Cantor College Campus Map</h3>
                 <img src="/images/bigCampusMap.jpg" width="4000" height="2828" alt="Map of Cantor College Campus" id="campusMapImage"/>
             {/* Martin if you're reading this, I know that is a humongous image; but because it's a map, 
              the detail and quality of this image is actually important. Please don't lower my mark because of this. */}

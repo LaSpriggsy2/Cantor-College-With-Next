@@ -15,24 +15,23 @@ const CourseDetails = async ({ params }) => {
   console.dir(course);
 
   return (
-    <div className='infoBox'>
-      <h2>
+    <div className='infoBox' id="singleCourse">
+      <h2 id="singleCourseTitle">
        {course.CourseTitle} 
       </h2>
       <table className="singleCourseTable">
         <tbody>
           <tr>
-            <td>{course.CourseAwardName}</td>
-            <td>{course.CourseSubject}</td>
-            <td></td>
-          </tr>
-          <tr>
             <td>{course.CourseSummary}</td>
           </tr>
           <tr>
-            <td>{course.CourseType}</td>
-            <td>{course.HasFoundationYear==="true"?"Has Foundation Year":"No Foundation Year"}</td>
-            <td>{course.NoLongerRecruiting==="false"?"Recruiting":"Not Recruiting"}</td>
+            <td>{course.CourseAwardName}</td>
+            <td>{course.CourseSubject}</td>
+          </tr>
+          <tr>
+            <td>{course.CourseType}<br></br>
+            {course.HasFoundationYear==="true"?"Has Foundation Year":"No Foundation Year"}<br></br>
+            {course.NoLongerRecruiting==="false"?"Recruiting":"Not Recruiting"}</td>
           </tr>
         </tbody>
       </table>
@@ -41,7 +40,7 @@ const CourseDetails = async ({ params }) => {
       <div className="courseDetailsItem">Ucas Code: {course.UcasCode==="None"?"N/A":course.UcasCode} <br></br>Ucas Points: {course.UcasPoints}</div>
       </div>
       <p>
-        <Link href='/'>Back to Course Lists</Link>
+        <Link className="returnLink" href='/'>Back to Course Lists</Link>
       </p>
     </div>
     

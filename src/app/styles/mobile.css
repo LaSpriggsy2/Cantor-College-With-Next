@@ -393,11 +393,15 @@ font-size: larger;
 .singleCourseTable
 
 td{
-  background-color: #fff;
-  color:#000;
+  /* background-color: #fff;
+  color:#000; */
+  background-color: #003366;
+  color: #fff;
 }
 .courseDetailsItem{
-  background-color: #fff;
+  /* background-color: #fff; */
+  background-color: #003366;
+  color: #fff;
   display: flex;
   padding:15px;
 }
@@ -406,4 +410,14 @@ td{
   flex-wrap: wrap;
   gap: 5px;
 }
-
+#singleCourseTitle{
+  background-color: #003366;
+  color: #fff;
+}
+#singleCourse{
+  background-color: #003366;
+  color: #fff;
+}
+.returnLink{
+  color: #ff0000;
+}
