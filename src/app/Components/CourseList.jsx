@@ -1,5 +1,6 @@
 "use client"
 import React, { useState, useEffect } from "react";
+import Link from "next/link";
 const CourseList = ({courseListData}) =>{
         const [computingCourses, SetComputingCourses] = useState([]);
         const [designCourses, SetDesignCourses] = useState([]);
@@ -54,6 +55,9 @@ const CourseList = ({courseListData}) =>{
                         </td>
                         <td>
                             {item.CourseSummary}
+                        </td>
+                        <td>
+                        <Link href={`course/${item.id}`}>... More Details</Link>
                         </td>
                     </tr>
                 
