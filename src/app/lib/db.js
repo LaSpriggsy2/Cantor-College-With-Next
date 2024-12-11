@@ -15,6 +15,26 @@ return rows;
   throw new Error("Failed to fetch data.");
 }
 };
+// const fetchComputingCourses = async () => {
+//   try{
+// const query = "SELECT * from courseslist";  
+// const [rows] = await connection.execute(query); 
+// return rows;  
+// } catch (error) {
+// console.error("Database Error:", error); 
+// throw new Error("Failed to fetch data.");
+// }
+// };
+// const fetchDesginCourses = async () => {
+//   try{
+// const query = "SELECT * from courseslist";  
+// const [rows] = await connection.execute(query); 
+// return rows;  
+// } catch (error) {
+// console.error("Database Error:", error); 
+// throw new Error("Failed to fetch data.");
+// }
+// };
 const fetchCourseDetails = async (id) => {
   try {
 

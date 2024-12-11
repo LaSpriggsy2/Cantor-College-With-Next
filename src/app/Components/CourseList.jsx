@@ -14,7 +14,7 @@ const CourseList = ({courseListData}) =>{
 
         const SetCourseList = (item) =>(
             
-                        <React.Fragment key={item.CourseID}>
+                        <React.Fragment key={item.id}>
 
                     <tr >
                         <td>

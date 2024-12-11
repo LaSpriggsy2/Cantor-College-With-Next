@@ -17,7 +17,7 @@ useEffect(()=>{
     function RevealSection(ev){
       console.dir(ev.target.classList[0]);
       let sectionName = ev.target.classList[0];
-      console.dir(sectionName);
+      // console.dir(sectionName);
       let sectionElement = document.getElementById(sectionName);
       console.dir(sectionElement);
       if(sectionElement.classList.contains("hidden")){
