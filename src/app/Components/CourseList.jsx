@@ -18,48 +18,15 @@ const CourseList = ({courseListData}) =>{
 
                     <tr >
                         <td>
-                            {item.CourseTitle}
+                            {item.CourseTitle} {item.NoLongerRecruiting==="true"?" (Not Recruiting)":""}
                         </td>
-                        <td>
-                            {item.UcasPoints==="None"?"":item.UcasPoints}
-                        </td>
-                        <td>
-                            {item.UcasCode==="None"?"":item.UcasCode}
-                        </td>
-                    </tr>
-                    <tr>
                         <td>
                             {item.CourseAwardName}
                         </td>
-                        <td>
-                            {item.CourseType}
-                        </td>
-                        <td>
-                            {item.NoLongerRecruiting==="false"?"Recruiting":"Not Recruiting"}
-                        </td>
+                        
+                        
                     </tr>
-                    <tr>
-                        <td>
-                            {item.YearOfEntry}
-                        </td>
-                        <td>
-                            {item.StudyLength}
-                        </td>
-                        <td>
-                            {item.HasFoundationYear==="true"?"Has Foundation Year":"No Foundation Year"}
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            {item.ModeOfAttendance}
-                        </td>
-                        <td>
-                            {item.CourseSummary}
-                        </td>
-                        <td>
-                        <Link href={`course/${item.id}`}>... More Details</Link>
-                        </td>
-                    </tr>
+                    <Link href={`course/${item.id}`}>Find Out More</Link>
                 
                  </React.Fragment>
             );

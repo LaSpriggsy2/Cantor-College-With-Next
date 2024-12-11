@@ -295,18 +295,17 @@ background-color: #e0d7c6;
 color: #000;
 font-size: larger;
   }
-  tr:nth-child(4n+1),
-  tr:nth-child(4n+2),
-  tr:nth-child(4n+3),
-  tr:nth-child(4n+4){
- background-color: #cc8716;
+  tr:nth-child(2n+1){
+    background-color: #cc8716;
+    color: #fff;
   }
-  tr:nth-child(8n+1),
-  tr:nth-child(8n+2),
-  tr:nth-child(8n+3),
-  tr:nth-child(8n+4){
+  tr:nth-child(4n+1){
     background-color: #2e6656;
     color: #fff;
+     }
+     td{
+      padding: 10px;
+      font-size: 15px;
      }
      
      /* .table
@@ -392,5 +391,5 @@ font-size: larger;
 }
 
 .singleCourseTable{
-  
+
 }
