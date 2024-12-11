@@ -418,6 +418,9 @@ td{
   background-color: #003366;
   color: #fff;
 }
+#singleCourseAward{
+  font-size: larger;
+}
 .returnLink{
   color: #ff0000;
 }

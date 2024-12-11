@@ -19,14 +19,12 @@ const CourseDetails = async ({ params }) => {
       <h2 id="singleCourseTitle">
        {course.CourseTitle} 
       </h2>
+            <p>{course.CourseSummary}</p>
       <table className="singleCourseTable">
         <tbody>
           <tr>
-            <td>{course.CourseSummary}</td>
-          </tr>
-          <tr>
-            <td>{course.CourseAwardName}</td>
             <td>{course.CourseSubject}</td>
+            <td id="singleCourseAward">{course.CourseAwardName}</td>
           </tr>
           <tr>
             <td>{course.CourseType}<br></br>
