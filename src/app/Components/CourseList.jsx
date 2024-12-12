@@ -30,7 +30,7 @@ const CourseList = ({courseListData}) =>{
                                 <div className="courseListItemDetails">
 
                             <p>{item.CourseAwardName}</p>
-                    <Link target="_blank" href={`course/${item.id}`}>Find Out More</Link>
+                    <Link className="courseDetailsLink" target="_blank" href={`course/${item.id}`}>Find Out More</Link>
                                 </div>
                             </li>
                         

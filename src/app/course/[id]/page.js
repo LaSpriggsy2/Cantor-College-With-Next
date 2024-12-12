@@ -40,7 +40,7 @@ const CourseDetails = async ({ params }) => {
       <div className="courseDetailsItem">Ucas Code: {course.UcasCode==="None"?"N/A":course.UcasCode} <br></br>Ucas Points: {course.UcasPoints}</div>
       </div>
       <p>
-        <Link className="returnLink" href='/'>Back to Course Lists</Link>
+        <Link className="returnLink" href='/'>Cantor Home</Link>
       </p>
     </div>
     

@@ -4,7 +4,7 @@ import './styles/desktop.css'
 export default function RootLayout({ children }) {
 
     return(
-      <html>
+      <html lang='en'>
   {children}
 </html>
 

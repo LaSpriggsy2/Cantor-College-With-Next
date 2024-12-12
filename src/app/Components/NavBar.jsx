@@ -10,8 +10,9 @@ useEffect(()=>{
    
     let bar = 0;
     for(let i=0; i<sectionBars.length; i++){
-      sectionBars[i].addEventListener("click", RevealSection);
-      
+      if (!sectionBars[i].dataset.listenerAdded) {
+        sectionBars[i].addEventListener("click", RevealSection);
+        sectionBars[i].dataset.listenerAdded = "true";}
     }
     
     function RevealSection(ev){
