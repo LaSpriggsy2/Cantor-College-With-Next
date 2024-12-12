@@ -15,6 +15,8 @@ const CourseDetails = async ({ params }) => {
   console.dir(course);
 
   return (
+    <body>
+
     <div className='infoBox' id="singleCourse">
       <h2 id="singleCourseTitle">
        {course.CourseTitle} 
@@ -42,6 +44,7 @@ const CourseDetails = async ({ params }) => {
       </p>
     </div>
     
+    </body>
   );
 };
 export default CourseDetails;

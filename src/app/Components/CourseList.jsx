@@ -13,48 +13,48 @@ const CourseList = ({courseListData}) =>{
         }, [courseListData]);
 
         const SetCourseList = (item) =>(
-            
-                        <React.Fragment key={item.id}>
+            <ul key={item.id} className="courseList">
 
-                    <tr >
-                        <td>
-                            {item.CourseTitle} {item.NoLongerRecruiting==="true"?" (Not Recruiting)":""}
-                        </td>
-                        <td>
-                            {item.CourseAwardName}
-                        </td>
+            {/* // <tbody id="designCoursesData" key={item.id}> */}
+                
+                        {/* <React.Fragment key={item.id}> */}
+
+                    
+                            <li className="courseListItem">{item.CourseTitle}
+                        
+                            {item.CourseAwardName} {item.NoLongerRecruiting==="true"?" (Not Recruiting)":""}</li>
                         
                         
-                    </tr>
+                        
+                    
                     <Link href={`course/${item.id}`}>Find Out More</Link>
                 
-                 </React.Fragment>
+                 {/* </React.Fragment> */}
+                 {/* </tbody> */}
+            </ul>
             );
     return(
         <div className="courseLists">
             <div className="infoBox" id="courseListBox">
-                <table className="table">
-                    <thead>
-                        <tr>
-                            <th>Computing Courses</th>
-                        </tr>
-                    </thead>
-                    <tbody id="computingCoursesData">
+                <div className="table">
+                    
+                        
+                            <h4>Computing Courses</h4>
+                        
+                    {/* <tbody id="computingCoursesData"> */}
                         {computingCourses.map((item)=> SetCourseList(item))}
-                    </tbody>
-                </table>
+                    {/* </tbody> */}
+                </div>
             </div>
             <div className="infoBox" id="courseListBox">
-                <table className="table">
-                    <thead>
-                        <tr>
-                            <th>Design Courses</th>
-                        </tr>
-                    </thead>
-                    <tbody id="designCoursesData">
+                <div className="table">
+                    
+                            <h4>Design Courses</h4>
+                        
+                    {/* <tbody id="designCoursesData"> */}
                     {designCourses.map((item)=> SetCourseList(item))}
-                    </tbody>
-                </table>
+                    {/* </tbody> */}
+                </div>
             </div>
         
 
