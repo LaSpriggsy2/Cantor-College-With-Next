@@ -20,14 +20,23 @@ const CourseList = ({courseListData}) =>{
                         {/* <React.Fragment key={item.id}> */}
 
                     
-                            <li className="courseListItem">{item.CourseTitle}<br></br>
+                            <li className="courseListItem">
+                                <div className="courseListItemTitle">
+
+                                <p id="courseTitleText">{item.CourseTitle}</p>
                         
-                            {item.CourseAwardName} {item.NoLongerRecruiting==="true"?" (Not Recruiting)":""}</li>
+                            <p>{item.NoLongerRecruiting==="true"?" (Not Recruiting)":""}</p> 
+                                </div>
+                                <div className="courseListItemDetails">
+
+                            <p>{item.CourseAwardName}</p>
+                    <Link target="_blank" href={`course/${item.id}`}>Find Out More</Link>
+                                </div>
+                            </li>
                         
                         
                         
                     
-                    <Link href={`course/${item.id}`}>Find Out More</Link>
                 
                  {/* </React.Fragment> */}
                  {/* </tbody> */}
@@ -39,7 +48,7 @@ const CourseList = ({courseListData}) =>{
                 <div className="table">
                     
                         
-                            <h4>Computing Courses</h4>
+                            <h3>Computing Courses</h3>
                         
                     {/* <tbody id="computingCoursesData"> */}
                         {computingCourses.map((item)=> SetCourseList(item))}
@@ -49,7 +58,7 @@ const CourseList = ({courseListData}) =>{
             <div className="infoBox" id="courseListBox">
                 <div className="table">
                     
-                            <h4>Design Courses</h4>
+                            <h3>Design Courses</h3>
                         
                     {/* <tbody id="designCoursesData"> */}
                     {designCourses.map((item)=> SetCourseList(item))}

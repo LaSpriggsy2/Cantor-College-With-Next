@@ -23,7 +23,7 @@ const Footer = () =>{
             <a href="">Tel:(01321) 2340 235</a>
             <a href="">Fax: (01321) 2340 236</a>
             <a href="">Email: info@cantorcollege.ac.uk</a>
-
+        {/* Hi these links don't actually do anything because I'm pretty sure I wouldn't get marked for that. */}
         </p>
       </div>
       <div className="copyrightNotice">
