@@ -20,7 +20,7 @@ const CourseList = ({courseListData}) =>{
                         {/* <React.Fragment key={item.id}> */}
 
                     
-                            <li className="courseListItem">{item.CourseTitle}
+                            <li className="courseListItem">{item.CourseTitle}<br></br>
                         
                             {item.CourseAwardName} {item.NoLongerRecruiting==="true"?" (Not Recruiting)":""}</li>
                         
