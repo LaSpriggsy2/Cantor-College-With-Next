@@ -30,7 +30,7 @@ const Footer = () =>{
         Contact us:
         <div className="mediaLinks">
             <a href="https://www.facebook.com">
-                <Image  src="images\facebookIcon.png" alt="Facebook icon" className="mediaLink" width="100" height="102"/>
+                <img  src="images\facebookIcon.png" alt="Facebook icon" className="mediaLink" width="100" height="102"/>
             </a>
             <a href="https://www.instagram.com" >
                 <img src="images\instagramIcon.png" alt="Instagram logo" className="mediaLink" width="100" height="100"/>
