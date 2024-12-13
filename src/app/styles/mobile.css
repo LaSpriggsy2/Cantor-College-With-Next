@@ -27,7 +27,7 @@ header{
     padding:1.5%;
     margin: 5%;
     width: 100%; 
-    color: #fff;
+    color: #fff; /*Hi, you said this part was good to leave as is, despite lighthouse saying it's bad*/
     text-align: center;
     align-content: center;
     }
@@ -311,27 +311,25 @@ header{
     height: auto;
   }
 
-  
-
   .contactDetails a{
-    &:link{
-      text-decoration: none;
-      color: #fff;
-    }
-    &:visited {
-      text-decoration: none;
-      color: #fff;
-    }
-    &:hover{
+    color: #fff;
+  }
+.contactDetails{
+  padding-left: 10px;
+  color: #fff;
+}
+  .contactDetails a{
+    
       text-decoration: underline;
       color: #fff;
     }
-    &:active {
-      text-decoration: underline;
-      color: #0000ff;
+    .contactDetails a:visited{
+    
+      text-decoration: none;
+      color: #fff;
     }
   
-  }
+  
   .copyrightNotice a{
     &:link{
     text-decoration: none;

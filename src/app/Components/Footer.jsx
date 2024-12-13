@@ -1,6 +1,30 @@
+"use client"
 import React from "react";
 const Footer = () =>{
-    return(
+    const CopyToClipboard = ({ text, label }) =>{
+        const handleCopy = async (e) => {
+          e.preventDefault(); 
+      
+      
+          try {
+            await navigator.clipboard.writeText(text);
+            alert('copied ${text}');
+          } catch (error) {
+            console.error("Failed to copy text: ", error);
+            alert("Failed to copy text.");
+          }
+        }
+        return (
+            <a
+            href="#"
+            onClick={handleCopy}
+            style={{ textDecoration: "underline", cursor: "pointer", color: "blue" }}
+            >
+          {label}
+        </a>
+      );
+    }
+      return(
         <footer>
         <div className="contactUs">
         Contact us:
@@ -19,18 +43,17 @@ const Footer = () =>{
             </a>
             
         </div>
-        <p className="contactDetails">
-            <a href="">Tel:(01321) 2340 235</a>
-            <a href="">Fax: (01321) 2340 236</a>
-            <a href="">Email: info@cantorcollege.ac.uk</a>
-        {/* Hi these links don't actually do anything because I'm pretty sure I wouldn't get marked for that. */}
-        </p>
+        <div className="contactDetails">
+            <p>Tel: <CopyToClipboard text="01321 2340 235" label="(01321) 2340 235"/></p>
+            <p>Fax: <CopyToClipboard text="01321 2340 236"  label="(01321) 2340 236"/></p>
+            <p>Email: <CopyToClipboard text="info@cantorcollege.ac.uk" label="info@cantorcollege.ac.uk"/></p>
+        </div>
       </div>
       <div className="copyrightNotice">
-        <a href="https://www.gov.uk/guidance/copyright-notices">COPYRIGHT NOTICE</a>
+        <a href="https://www.gov.uk/guidance/copyright-notices">COPPYRIGHT NOTICE &copy; {new Date().getFullYear()}</a>
       </div>
       </footer>
     )
-}
+};
 
 export default Footer;

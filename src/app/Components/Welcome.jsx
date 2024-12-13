@@ -4,9 +4,7 @@ const Welcome = ()=>{
   const images = [
     {path: "images/cantorPic1.jpg", alt:"Image of Cantor College"},
     {path: "images/cantorPic2.jpg", alt:"Image of Cantor College"},
-    // {path: "images/banner-image-1.jpg", alt:"test image"},
-    // {path: "images/banner-image-2.jpg", alt:"test image"},
-    // {path: "images/banner-image-1.jpg", alt:"test image"},
+  
 
 
     ];
@@ -32,7 +30,6 @@ const Welcome = ()=>{
 <div className="slides" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
 {images.map((image, index) => (
   <img key={index} src={image.path} alt={image.alt} width="1000" height="750" 
-  // className="welcomeImage"
    className="slide" id="cantorPics" />
 ))}
 </div>

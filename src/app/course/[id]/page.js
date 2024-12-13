@@ -1,3 +1,4 @@
+import Footer from "@/app/Components/Footer";
 import { fetchCourseDetails } from "@/app/lib/db";
 import Link from "next/link";
 export async function generateMetadata({ params }) {
@@ -43,7 +44,7 @@ const CourseDetails = async ({ params }) => {
         <Link className="returnLink" href='/'>Cantor Home</Link>
       </p>
     </div>
-    
+   <Footer></Footer> 
     </body>
   );
 };
