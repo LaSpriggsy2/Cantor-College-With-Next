@@ -17,7 +17,7 @@ const Welcome = ()=>{
   useEffect(()=>{
     const interval = setInterval(() => {
       nextSlide();
-  }, 5000);
+  }, 10000);
   return () => clearInterval(interval);
 }, [nextSlide]);
     return(
