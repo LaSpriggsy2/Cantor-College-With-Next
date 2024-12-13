@@ -9,7 +9,7 @@ const Footer = () =>{
       
           try {
             await navigator.clipboard.writeText(text);
-            alert('copied ${text}');
+            alert(`copied ${text}`);
           } catch (error) {
             console.error("Failed to copy text: ", error);
             alert("Failed to copy text.");
