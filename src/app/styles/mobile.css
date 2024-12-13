@@ -311,14 +311,15 @@ header{
     height: auto;
   }
 
-  .contactDetails a{
+  /* .contactDetails a{
     color: #fff;
-  }
+  }*/
 .contactDetails{
   padding-left: 10px;
   color: #fff;
 }
-  .contactDetails a{
+/*
+  .contactDetails p a{
     
       text-decoration: underline;
       color: #fff;
@@ -328,7 +329,9 @@ header{
       text-decoration: none;
       color: #fff;
     }
-  
+  .contactDetailsLink{
+    color: #fff;
+  } */
   
   .copyrightNotice a{
     &:link{

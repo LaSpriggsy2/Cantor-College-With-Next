@@ -14,12 +14,6 @@ const CourseList = ({courseListData}) =>{
 
         const SetCourseList = (item) =>(
             <ul key={item.id} className="courseList">
-
-            {/* // <tbody id="designCoursesData" key={item.id}> */}
-                
-                        {/* <React.Fragment key={item.id}> */}
-
-                    
                             <li className="courseListItem">
                                 <div className="courseListItemTitle">
 
@@ -33,13 +27,6 @@ const CourseList = ({courseListData}) =>{
                     <Link className="courseDetailsLink" target="_blank" href={`course/${item.id}`}>Find Out More</Link>
                                 </div>
                             </li>
-                        
-                        
-                        
-                    
-                
-                 {/* </React.Fragment> */}
-                 {/* </tbody> */}
             </ul>
             );
     return(

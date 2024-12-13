@@ -1,4 +1,3 @@
-import styles from './page.module.css';
 import Facilities from "./Components/Facilities";
 import Footer from "./Components/Footer";
 import LearningResources from "./Components/LearningResources";
@@ -7,7 +6,6 @@ import WorkingWithBusinesses from "./Components/WorkingWithBusinesses";
 import Courses from "./Components/Courses";
 import CampusMap from "./Components/CampusMap";
 import Welcome from './Components/Welcome';
-import Image from 'next/image';
 import NavBar from './Components/NavBar';
 import Header from './Components/Header';
 export const metadata = {
