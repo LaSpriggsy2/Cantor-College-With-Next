@@ -30,16 +30,16 @@ const Footer = () =>{
         Contact us:
         <div className="mediaLinks">
             <a href="https://www.facebook.com">
-                <img  src="images\facebookIcon.png" alt="Facebook icon" className="mediaLink" width="100" height="102"/>
+                <Image  src="/images/facebookIcon.png" alt="Facebook icon" className="mediaLink" width="100" height="102"/>
             </a>
             <a href="https://www.instagram.com" >
-                <img src="images\instagramIcon.png" alt="Instagram logo" className="mediaLink" width="100" height="100"/>
+                <Image src="/images/instagramIcon.png" alt="Instagram logo" className="mediaLink" width="100" height="100"/>
             </a>            
             <a href="https://www.twitter.com">
-                <img  src="images\twitterIcon.png" alt="Twitter logo" className="mediaLink" width="100" height="107"/>
+                <Image  src="/images/twitterIcon.png" alt="Twitter logo" className="mediaLink" width="100" height="107"/>
             </a>
             <a href="https://www.youtube.com">
-                <img  src="images\youtubeIcon.png" alt="YouTube logo" className="mediaLink" width="100" height="100"/>
+                <Image  src="/images/youtubeIcon.png" alt="YouTube logo" className="mediaLink" width="100" height="100"/>
             </a>
             
         </div>

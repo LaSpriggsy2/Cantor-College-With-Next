@@ -26,7 +26,9 @@ const CourseDetails = async ({ params }) => {
       <table className="singleCourseTable">
         <tbody>
           <tr>
-            <td>{course.CourseSubject}</td>
+            <td>{course.CourseSubject}</td>{/*Nothing has said I need to (or am even allowed to) alter the text in the assignment package, 
+            so for all I know the client might want &rsquo; instead of ' . 
+            And since they suposidly don't know anything, they couldn't have known that &rsquo; is for '  */}
             <td id="singleCourseAward">{course.CourseAwardName}</td>
           </tr>
           <tr>
