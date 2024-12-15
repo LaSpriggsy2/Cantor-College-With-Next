@@ -311,27 +311,11 @@ header{
     height: auto;
   }
 
-  /* .contactDetails a{
-    color: #fff;
-  }*/
+  
 .contactDetails{
   padding-left: 10px;
   color: #fff;
 }
-/*
-  .contactDetails p a{
-    
-      text-decoration: underline;
-      color: #fff;
-    }
-    .contactDetails a:visited{
-    
-      text-decoration: none;
-      color: #fff;
-    }
-  .contactDetailsLink{
-    color: #fff;
-  } */
   
   .copyrightNotice a{
     &:link{
